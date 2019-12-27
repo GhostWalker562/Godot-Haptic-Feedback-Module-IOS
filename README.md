@@ -38,7 +38,9 @@ impact(feedback_style)
 Example in GD:
 ```
 # Creates an instance of Haptic
-var hap = Haptic.new()
+var hap
+if Engine.has_singleton("Haptic"):
+  hap = Engine.get_singleton("Haptic")
 hap.selection()
 ```
 Why not Android?
