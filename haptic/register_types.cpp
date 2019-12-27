@@ -4,7 +4,7 @@
 #include "ios/src/haptic.h"
 
 void register_haptic_types() {
-	ClassDB::register_class<Haptic>();
+	Engine::get_singleton()->add_singleton(Engine::Singleton("Haptic"), memnew("Haptic")));
 }
 
 void unregister_haptic_types() {
