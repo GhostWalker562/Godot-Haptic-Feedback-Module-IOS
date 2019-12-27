@@ -25,9 +25,6 @@ API Refrence (iOS)
 ----------
 The following methods are available:
 ```
-# Creates an instance of haptic
-Haptic.new()
-
 # Makes the device trigger a selection feedback
 selection()
 
